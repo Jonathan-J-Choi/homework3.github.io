@@ -1,9 +1,16 @@
 
 var pass = prompt("Please choose how long long you wish your password to be.  Please choose a whole number between 8 and 128.");
-confirm("Would you like uppercase letters in your password?");
-confirm("Would you like lowercase letters in your password?");
-confirm("Would you like numbers in your password?");
-confirm("Would you like symbols in your password?");
+  if (pass > 7 & pass < 129) {
+    alert ("No Problem!")
+    return 
+  }
+  else {
+    alert ("Not a valid password length")
+  }
+// confirm("Would you like uppercase letters in your password?");
+// confirm("Would you like lowercase letters in your password?");
+// confirm("Would you like numbers in your password?");
+// confirm("Would you like symbols in your password?");
 // Dom Elements
 const resultEl = document.getElementById('result');
 const lengthEl = document.getElementById('length');
