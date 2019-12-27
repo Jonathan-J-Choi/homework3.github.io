@@ -1,13 +1,111 @@
 
 var pass = prompt("Please choose how long long you wish your password to be.  Please choose a whole number between 8 and 128.");
-  if (pass > 7 & pass < 129) {
-    alert ("No Problem!")
-    return 
+if (pass > 7 & pass < 129) {
+  alert("You got it cheif!");
+  if (confirm("Would you like uppercase letters in your password?") == true) {
+    alert("I can do that for you!");
+    if (confirm("Would you like lowercase letters in your password?") == true) {
+      alert("I can do that for you!");
+      if (confirm("Would you like numbers in your password?") == true) {
+        alert("I can do that for you!");
+        if (confirm("Would you like symbols in your password?") == true) {
+          alert("Generating your password!");
+        }
+        else {
+          alert("Not a problem. Generating your password!");
+        }
+      }
+      else {
+        alert("Not a problem");
+        if (confirm("Would you like symbols in your password?") == true) {
+          alert("Generating your password!");
+        }
+        else {
+          alert("Not a problem. Generating your password!");
+        }
+
+      }
+    }
+    else {
+      alert("Not a problem.")
+      if (confirm("Would you like numbers in your password?") == true) {
+        alert("I can do that for you!");
+        if (confirm("Would you like symbols in your password?") == true) {
+          alert("Generating your password!");
+        }
+        else {
+          alert("Not a problem. Generating your password!");
+        }
+      }
+      else {
+        alert("Not a problem");
+        if (confirm("Would you like symbols in your password?") == true) {
+          alert("Generating your password!");
+        }
+        else {
+          alert("Not a problem. Generating your password!");
+        }
+
+      }
+
+    }
   }
   else {
-    alert ("Not a valid password length")
+    alert("Not a problem");
+    if (confirm("Would you like lowercase letters in your password?") == true) {
+      alert("I can do that for you!");
+      if (confirm("Would you like numbers in your password?") == true) {
+        alert("I can do that for you!");
+        if (confirm("Would you like symbols in your password?") == true) {
+          alert("Generating your password!");
+        }
+        else {
+          alert("Not a problem. Generating your password!");
+        }
+      }
+      else {
+        alert("Not a problem");
+        if (confirm("Would you like symbols in your password?") == true) {
+          alert("Generating your password!");
+        }
+        else {
+          alert("Not a problem. Generating your password!");
+        }
+
+      }
+    }
+    else {
+      alert("Not a problem.")
+      if (confirm("Would you like numbers in your password?") == true) {
+        alert("I can do that for you!");
+        if (confirm("Would you like symbols in your password?") == true) {
+          alert("Generating your password!");
+        }
+        else {
+          alert("Not a problem. Generating your password!");
+        }
+      }
+      else {
+        alert("Not a problem");
+        if (confirm("Would you like symbols in your password?") == true) {
+          alert("Generating your password!");
+        }
+        else {
+          alert("Not a problem. Generating your password!");
+        }
+
+      }
+
+    }
   }
-// confirm("Would you like uppercase letters in your password?");
+}
+
+
+else {
+  alert("Not a valid password length");
+}
+
+
 // confirm("Would you like lowercase letters in your password?");
 // confirm("Would you like numbers in your password?");
 // confirm("Would you like symbols in your password?");
