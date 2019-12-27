@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Password Generator</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/22240d47c2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,28 +23,28 @@
     </div>
     <div class="settings">
       <div class="setting">
-        <label>Password Length</label>
-        <input type="number" id="length" min="8" max="128" value="128" />
+        <label>Password length</label>
+        <input type="number" id="length" min='8' max='128' value='50' />
       </div>
       <div class="setting">
-        <label>Include Uppercase Letters</label>
-        <input type="checkbox" id="uppercase" unchecked />
+        <label>Include uppercase letters</label>
+        <input type="checkbox" id="uppercase" checked />
       </div>
       <div class="setting">
-        <label>Include Undercase Letters</label>
-        <input type="checkbox" id="undercase" unchecked />
+        <label>Include lowercase letters</label>
+        <input type="checkbox" id="lowercase" checked />
       </div>
       <div class="setting">
-        <label>Include Numbers</label>
-        <input type="checkbox" id="numbers" unchecked />
+        <label>Include numbers</label>
+        <input type="checkbox" id="numbers" checked />
       </div>
       <div class="setting">
-        <label>Include Symbols</label>
-        <input type="checkbox" id="symbols" unchecked />
+        <label>Include symbols</label>
+        <input type="checkbox" id="symbols" checked />
       </div>
     </div>
     <button class="btn btn-large" id="generate">
-      Generate Your Password!
+      Generate password
     </button>
   </div>
 
