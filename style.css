@@ -1,3 +1,9 @@
 .jumbotron{
-  margin-top: 10em;
+  margin-top: 13em;
+}
+.color{
+  background-color: mistyrose;
+}
+.settings{
+  display: none;
 }
