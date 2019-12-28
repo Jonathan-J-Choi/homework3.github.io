@@ -83,13 +83,15 @@ function getRandomSymbol() {
 }
 
 var length = Number(prompt("How many characters will your password be? Please enter a number between 8 and 128"));
-//ask for character type
+//ask for what kind of password
 var charType = prompt("Please enter any combination of the following character types in any order with or without all of them: lowercase, uppercase, numeric, or special.  examples include: 'lowercase, special' or 'special, uppercase, numeric, lowercase.' or 'numeric, uppercase, lowercase'");
-//generate password
+//generate password upon request
 function generatePassword() {
-  //evaluate character type
+  //evaluate character type combination possibilities
   var charSet = "";
   var charTypeLower = charType.toLowerCase();
+  
+  // one variable
   if( charTypeLower === "lowercase" ) {
     charSet = "abcdefghijklmnopqrstuvwxyz";
   } else if( charTypeLower === "uppercase" ) {
@@ -98,6 +100,8 @@ function generatePassword() {
     charSet = "0123456789";
   } else if( charTypeLower === "special" ) {
     charSet = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+
+    // two variables
   } else if( charTypeLower === "lowercase, uppercase" ) {
     charSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
   } else if( charTypeLower === "lowercase, numeric" ) {
@@ -126,6 +130,7 @@ function generatePassword() {
   } else if( charTypeLower === "special, numeric" ) {
     charSet = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789";
 
+    // three variables
   } else if( charTypeLower === "lowercase, uppercase, numeric" ) {
     charSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"; 
   } else if( charTypeLower === "lowercase, uppercase, special" ) {
@@ -178,6 +183,7 @@ function generatePassword() {
   } else if( charTypeLower === "special, numeric, uppercase" ) {
     charSet = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+    // four variables
   } else if( charTypeLower === "lowercase, uppercase, numeric, special" ) {
     charSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
   } else if( charTypeLower === "lowercase, uppercase, special, numeric" ) {
