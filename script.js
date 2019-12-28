@@ -81,16 +81,18 @@ function getRandomSymbol() {
   const symbols = '!@#$%^&*(){}[]=<>/,.'
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
-
+// ask how long password should be
 var length = Number(prompt("How many characters will your password be? Please enter a number between 8 and 128"));
+
 //ask for what kind of password
 var charType = prompt("Please enter any combination of the following character types in any order with or without all of them: lowercase, uppercase, numeric, or special.  examples include: 'lowercase, special' or 'special, uppercase, numeric, lowercase.' or 'numeric, uppercase, lowercase'");
+
 //generate password upon request
 function generatePassword() {
   //evaluate character type combination possibilities
   var charSet = "";
   var charTypeLower = charType.toLowerCase();
-  
+
   // one variable
   if( charTypeLower === "lowercase" ) {
     charSet = "abcdefghijklmnopqrstuvwxyz";
