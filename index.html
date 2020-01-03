@@ -14,26 +14,34 @@
 </head>
 
 <body class="color">
-
   <div class="container">
     <div class="jumbotron bg-light">
+
+      <!-- Main headings and generator -->
       <h1 class="display-4 text-center">Do you need a new passcode?</h1>
-      <p class="lead text-center">Complete the prompts above or generate a new one below!</p>
+      <p class="lead text-center">Complete form below to generate a new brand new passcode!
+      </p>
       <hr class="my-4">
       <p>
         <div class="container text-center">
-          <h2>Password Generator</h2>
+          <h2>Password Generator V1.1</h2>
+
+          <!-- Password container and clipboard -->
           <div class="result-container">
             <span id="result"></span>
             <button class="btn" id="clipboard">
               <i class="fas fa-paste"></i>
             </button>
           </div>
+
+          <!-- Password length -->
           <div class="settings">
             <div class="setting">
               <label>Password length</label>
               <input type="number" id="length" min='8' max='128' value='50' />
             </div>
+
+            <!-- Various parameters -->
             <div class="setting">
               <label>Include uppercase letters</label>
               <input type="checkbox" id="uppercase" unchecked />
@@ -51,6 +59,8 @@
               <input type="checkbox" id="symbols" unchecked />
             </div>
           </div>
+
+          <!-- Buttons -->
           <button class="btn btn-danger btn-large" id="generate">
             <p class="butn">
               Generate new password
@@ -65,8 +75,8 @@
       </p>
     </div>
   </div>
-
-
+  
+  <!-- Javascript -->
   <script src="script.js"></script>
 </body>
 
